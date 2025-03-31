@@ -11,7 +11,7 @@
             
             echo "Você está online no servidor da empresa\n<br>";
 
-            echo "Seu cargo é: Gerente do departamento de analise de dados\n<br>";
+            echo "Seu cargo é: Sub-gerente do departamento de analise de dados\n<br>";
         }else{
             echo "Usuario ou senha incorreto, Tente novamente\n<br>";
 
