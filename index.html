@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto">texto</p>
+    <br><br>
+    <button onclick="trocartexto()">trocar texto</button><br><br>
+    <button onclick="azul()">AZUL</button><br><br>
+    <button onclick="vermelho()">VERMELHO</button><br><br>
+    <button onclick="verde()">VERDE</button><br><br>
+    <button onclick="bemvindo()"><strong><H1>CLIQUE</H1></strong></button>
+        
+</body>
+<script>
+    function trocartexto(){
+        document.getElementById("texto").innerHTML = "Texto trocado!";
+    }
+    function azul(){
+        document.body.style.backgroundColor = "blue";
+        document.body.style.color = "white";
+    }
+    function verde(){
+        document.body.style.backgroundColor = "green";
+        document.body.style.color = "white";
+    }
+    function vermelho(){
+        document.body.style.backgroundColor = "red";
+        document.body.style.color = "white";
+    }   
+    function bemvindo(){
+        alert("Bem-vindo ao meu site!");
+        document.getElementById("texto").innerHTML = "Bem-vindo ao meu site!";
+        document.getElementById("texto").style.textAlign = "center";
+        document.getElementById("texto").style.fontSize = "100px";
+    }
+</script>
+</html>
