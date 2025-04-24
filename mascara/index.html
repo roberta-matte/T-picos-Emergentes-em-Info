@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Máscaras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form id="formulario" onsubmit="return validarFormulario()">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+            <br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="(000.000.000-00)" maxlength="14" (000.000.000-00) required oninput="mascaraCPF(this)">
+            <br><br>
+
+            <label for="telefone">Telefone Celular:</label>
+            <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx" maxlength="15" required oninput="mascaraTelefone(this)">
+            <br><br>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="text" id="dataNascimento" placeholder="(**/**/****)" maxlength="10" required oninput="mascaraData(this)">
+            <br><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="00000-000" maxlength="9" required oninput="mascaraCEP(this)">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagemErro" class="erro"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
